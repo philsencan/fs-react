@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/greeting",
+      "lambdaFunction": "mypythonfunction",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/greeting"
+    }
+  ],
+  "resourceName": "mypythonapi",
+  "apiName": "mypythonapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "mypythonfunction"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-fsreact-dev-12512-authRole",
+    "unAuthRoleName": "amplify-fsreact-dev-12512-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "mypythonfunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
